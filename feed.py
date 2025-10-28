@@ -3,7 +3,7 @@ import feedparser
 
 mcp = FastMCP(name="feed_reader")
 
-@mcp.tool(name="free code camp feed search")
+@mcp.tool(name="free_code_camp_feed_search")
 def free_code_camp_feed_search(query: str, max_results: int = 3):
     feed = feedparser.parse("https://www.freecodecamp.org/news/rss/")  
     results = []
